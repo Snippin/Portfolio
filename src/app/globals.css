@@ -4,8 +4,22 @@
 
 :root
 {
-  --background: #ffffff;
-  --foreground: #171717;
+  --dark-a0: #000000;
+  --light-a0: #ffffff;
+
+  --primary-a0: #96009e;
+  --primary-a10: #a434a9;
+  --primary-a20: #b151b4;
+  --primary-a30: #bd6bbf;
+  --primary-a40: #c984c9;
+  --primary-a50: #d59dd4;
+
+  --surface-a0: #212121;
+  --surface-a10: #363636;
+  --surface-a20: #4c4c4c;
+  --surface-a30: #636363;
+  --surface-a40: #7b7b7b;
+  --surface-a50: #949494;
 }
 
 @font-face
@@ -16,18 +30,9 @@
   font-weight: 100-900;
 }
 
-@media (prefers-color-scheme: dark)
-{
-  :root
-  {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body
 {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--light-a0);
+  background: var(--surface-a0);
   font-family: "montserrat", Helvetica, sans-serif;
 }
