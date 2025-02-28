@@ -1,10 +1,8 @@
+import Navbar from "../components/Navbar";
+
 export default function Home()
 {
   return (
-    <>
-      <div className="font-normal">
-        temp
-      </div>
-    </>
+    <Navbar currentPage="Home"></Navbar>
   );
 }
