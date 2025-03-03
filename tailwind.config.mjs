@@ -31,7 +31,7 @@ export default {
       },
       fontFamily:
       {
-        code: [
+        default: [
           "montserrat",
         ]
       },
