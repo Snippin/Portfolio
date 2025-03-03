@@ -1,9 +1,12 @@
+"use client";
+
 import Link from "next/link";
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 const Footer = () =>
 {
   return (
-    <footer className="border-t mx-auto my-5 pt-5 sm:flex">
+    <footer className="border-t mx-auto my-5 pt-5 sm:flex sm:flex-wrap">
       <div className=" px-4 justify-items-center sm:w-5/6">
         <p>Contact Information</p>
         <p>seantongch@gmail.com</p>
@@ -24,9 +27,23 @@ const Footer = () =>
             GITHUB
           </Link>
         </div>
-
       </div>
-    </footer >
+
+      <div className="flex flex-col-reverse w-full mt-4 px-4 text-center sm:text-left sm:flex-row sm:justify-between">
+        <p>
+          &copy; {new Date().getFullYear()} by Sean Tong
+        </p>
+
+        <div className="flex items-center justify-center mb-4 cursor-pointer sm:mb-0"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <AiOutlineArrowUp size={24} />
+          <span className="border-b">
+            Back To Top
+          </span>
+        </div>
+      </div>
+    </footer>
   );
 }
 
