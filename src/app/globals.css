@@ -44,3 +44,8 @@ body
   background: var(--surface-a0);
   font-family: "montserrat", Helvetica, sans-serif;
 }
+
+.writing-rl
+{
+  writing-mode: vertical-rl;
+}
