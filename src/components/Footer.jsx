@@ -18,14 +18,16 @@ const Footer = () =>
         sm:px-0 sm:pr-4 sm:mt-0 sm:justify-items-end sm:w-1/2">
         <div>
           <Link href="http://linkedin.com/in/sean-tong-ch/" target="_blank"
-            className="cursor-pointer border-b">
+            className="cursor-pointer border-b
+              hover:border-primaryA30 hover:text-primaryA30">
             LINKEDIN
           </Link>
         </div>
 
         <div>
           <Link href="https://github.com/Snippin" target="_blank"
-            className="cursor-pointer border-b">
+            className="cursor-pointer border-b
+              hover:border-primaryA30 hover:text-primaryA30">
             GITHUB
           </Link>
         </div>
@@ -42,7 +44,8 @@ const Footer = () =>
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           <AiOutlineArrowUp size={24} />
-          <span className="border-b">
+          <span className="border-b
+            hover:border-primaryA30 hover:text-primaryA30">
             Back To Top
           </span>
         </div>
