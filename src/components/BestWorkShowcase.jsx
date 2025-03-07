@@ -23,9 +23,8 @@ const BestWorkShowcase = ({ showcaseNum = "00", interval = 3000, info }) =>
 
   return (
     <>
-      {/* Header */}
-      <div className="flex flex-col justify-between mb-16
-          sm:flex-row sm:justify-items-center">
+      <div className="flex flex-col mb-16
+          sm:flex-row sm:items-center">
         <div className="pl-4 w-1/12 justify-items-center mr-4
           sm:pl-16">
           <p className="mb-4 text-center font-bold italic text-3xl
