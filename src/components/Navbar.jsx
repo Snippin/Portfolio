@@ -24,7 +24,7 @@ const Navbar = ({ currentPage = "Home" }) =>
       "ml-10 hover:border-b text-xl";
 
   return (
-    <nav className="fixed w-full h-24 shadow-xl bg-surfaceA10">
+    <nav className="fixed w-full h-24 shadow-xl bg-surfaceA10 z-50">
       <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
         <div className="flex items-center">
           <Link href="/" >
