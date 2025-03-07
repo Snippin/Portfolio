@@ -39,15 +39,15 @@ const BestWorkShowcase = ({ showcaseNum = "00", interval = 3000, info }) =>
           </p>
         </div>
 
-        <Image
-          src={info.images[currentIndex]}
-          width={500}
-          height={700}
-          alt={info.name + " image " + currentIndex}
-          className={`w-full rounded-3xl object-scale-down
-            transition-opacity duration-500 ease-in-out
-            sm:w-1/2 px-4`}
-        />
+        <div className="overflow-hidden rounded-3xl px-2 w-full max-w-[600px] h-[280px] sm:h-[338px]">
+          <Image
+            src={info.images[currentIndex]}
+            alt={info.name + " image " + currentIndex}
+            width={600}
+            height={338}
+            className="w-full h-full object-cover"
+          />
+        </div>
 
         <div className="px-4 mt-8 sm:px-16 sm:mt-0">
           <h1 className="text-3xl font-bold italic mb-4
