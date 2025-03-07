@@ -18,6 +18,7 @@ const SJInfo = {
     "/images/projects/slayers_journey/SJ_RestSite.jpg",
     "/images/projects/slayers_journey/SJ_VFX.jpg",
   ],
+  link: "/projects/Slayer's_Journey",
 };
 
 export default SJInfo;
