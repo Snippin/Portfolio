@@ -44,7 +44,8 @@ export default function Home()
 
         <BestShowcase
           showcaseNum="2"
-          info={LumenousInfo} />
+          info={LumenousInfo}
+          reverse />
 
         <BestShowcase
           showcaseNum="3"
