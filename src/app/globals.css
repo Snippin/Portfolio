@@ -22,27 +22,11 @@
   --surface-a50: #949494;
 }
 
-@font-face
-{
-  font-family: "montserrat";
-  src: url("/fonts/montserrat.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 100-900;
-}
-
-@font-face
-{
-  font-family: "montserrat";
-  src: url("/fonts/montserrat_italic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: 100-900;
-}
-
 body
 {
   color: var(--light-a0);
   background: var(--surface-a0);
-  font-family: "montserrat", Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica, sans-serif;
 }
 
 .vertical-rl
