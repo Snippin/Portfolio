@@ -32,7 +32,7 @@ const BestWorkShowcase = ({ showcaseNum = "00", interval = 3000, info, reverse =
             {showcaseNum}
           </p>
 
-          <p className="writing-rl rotate-180 hidden
+          <p className="vertical-rl rotate-180 hidden
             sm:inline">
             {info.genre}
           </p>
