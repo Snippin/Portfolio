@@ -1,3 +1,5 @@
+const basePath = process.env.BASE_PATH;
+
 const BHInfo = {
   name: "Bullet.Hell",
   roles: "AI Programmer, Game Programmer, System Coordinator",
@@ -7,12 +9,12 @@ const BHInfo = {
   platform: "PC",
   duration: "2023",
   images: [
-    "/images/projects/bullet.hell/BH_MainMenu.jpg",
-    "/images/projects/bullet.hell/BH_Gameplay.jpg",
-    "/images/projects/bullet.hell/BH_Gameplay2.jpg",
-    "/images/projects/bullet.hell/BH_Shop.jpg",
-    "/images/projects/bullet.hell/BH_LevelUp.jpg",
-    "/images/projects/bullet.hell/BH_AI.jpg",
+    `${basePath}/images/projects/bullet.hell/BH_MainMenu.jpg`,
+    `${basePath}/images/projects/bullet.hell/BH_Gameplay.jpg`,
+    `${basePath}/images/projects/bullet.hell/BH_Gameplay2.jpg`,
+    `${basePath}/images/projects/bullet.hell/BH_Shop.jpg`,
+    `${basePath}/images/projects/bullet.hell/BH_LevelUp.jpg`,
+    `${basePath}/images/projects/bullet.hell/BH_AI.jpg`,
   ],
   link: "/projects/Bullet.Hell",
 };

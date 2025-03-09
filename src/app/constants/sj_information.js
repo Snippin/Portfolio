@@ -1,3 +1,5 @@
+const basePath = process.env.BASE_PATH;
+
 const SJInfo = {
   name: "Slayer's Journey",
   roles: "Independent",
@@ -7,16 +9,16 @@ const SJInfo = {
   platform: "PC",
   duration: "2024",
   images: [
-    "/images/projects/slayers_journey/sj_MainMenu.jpg",
-    "/images/projects/slayers_journey/sj_Combat.jpg",
-    "/images/projects/slayers_journey/sj_Combat2.jpg",
-    "/images/projects/slayers_journey/sj_DeckView.jpg",
-    "/images/projects/slayers_journey/sj_DeckView2.jpg",
-    "/images/projects/slayers_journey/SJ_CombatEnd.jpg",
-    "/images/projects/slayers_journey/SJ_RandomMap.jpg",
-    "/images/projects/slayers_journey/SJ_RandomMap2.jpg",
-    "/images/projects/slayers_journey/SJ_RestSite.jpg",
-    "/images/projects/slayers_journey/SJ_VFX.jpg",
+    `${basePath}/images/projects/slayers_journey/SJ_MainMenu.jpg`,
+    `${basePath}/images/projects/slayers_journey/SJ_Combat.jpg`,
+    `${basePath}/images/projects/slayers_journey/SJ_DeckView.jpg`,
+    `${basePath}/images/projects/slayers_journey/SJ_Combat2.jpg`,
+    `${basePath}/images/projects/slayers_journey/SJ_DeckView2.jpg`,
+    `${basePath}/images/projects/slayers_journey/SJ_CombatEnd.jpg`,
+    `${basePath}/images/projects/slayers_journey/SJ_RandomMap.jpg`,
+    `${basePath}/images/projects/slayers_journey/SJ_RandomMap2.jpg`,
+    `${basePath}/images/projects/slayers_journey/SJ_RestSite.jpg`,
+    `${basePath}/images/projects/slayers_journey/SJ_VFX.jpg`,
   ],
   link: "/projects/Slayer's_Journey",
 };

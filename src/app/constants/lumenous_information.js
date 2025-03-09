@@ -1,3 +1,5 @@
+const basePath = process.env.BASE_PATH;
+
 const LumenousInfo = {
   name: "Lumenous",
   roles: "AI Programmer, Game Programmer, System Coordinator",
@@ -7,14 +9,14 @@ const LumenousInfo = {
   platform: "PC",
   duration: "2023",
   images: [
-    "/images/projects/Lumenous/Lumenous_MainMenu.jpg",
-    "/images/projects/Lumenous/Lumenous_Gameplay1.jpg",
-    "/images/projects/Lumenous/Lumenous_Gameplay2.jpg",
-    "/images/projects/Lumenous/Lumenous_AI1.gif",
-    "/images/projects/Lumenous/Lumenous_AI2.gif",
-    "/images/projects/Lumenous/Lumenous_AI3.1.gif",
-    "/images/projects/Lumenous/Lumenous_AI3.2.gif",
-    "/images/projects/Lumenous/Lumenous_Fog.gif",
+    `${basePath}/images/projects/lumenous/Lumenous_MainMenu.jpg`,
+    `${basePath}/images/projects/lumenous/Lumenous_Gameplay1.jpg`,
+    `${basePath}/images/projects/lumenous/Lumenous_Gameplay2.jpg`,
+    `${basePath}/images/projects/lumenous/Lumenous_AI1.gif`,
+    `${basePath}/images/projects/lumenous/Lumenous_AI2.gif`,
+    `${basePath}/images/projects/lumenous/Lumenous_AI3.1.gif`,
+    `${basePath}/images/projects/lumenous/Lumenous_AI3.2.gif`,
+    `${basePath}/images/projects/lumenous/Lumenous_Fog.gif`,
   ],
   link: "/projects/Lumenous",
 };
