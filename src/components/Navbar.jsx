@@ -64,10 +64,10 @@ const Navbar = ({ currentPage = "Home" }) =>
         </div>
       </div>
 
-      <div className={
-        isMenuOpen ?
-          "fixed left-0 top-0 sm:hidden w-[65%] h-screen bg-surfaceA10 p-10 ease-in duration-500" :
-          "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+      <div className={`fixed w-[65%] h-screen top-0 bg-surfaceA10 p-10 ease-in duration-500
+        ${isMenuOpen ?
+          "left-0 sm:hidden" :
+          "left-[-100%]"}`
       }>
         <div className="flex w-full items-center justify-end">
           <div onClick={HandleNav}
@@ -111,7 +111,7 @@ const Navbar = ({ currentPage = "Home" }) =>
           </ul>
         </div>
       </div>
-    </nav>
+    </nav >
   )
 }
 
