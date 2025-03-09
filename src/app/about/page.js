@@ -21,10 +21,9 @@ export default function AboutPage()
         </p>
       </div>
 
-      <div className="flex flex-col mt-8 px-5
-        sm:flex-row sm:px-20">
-        <div className="mb-8
-          sm:mb-0 sm:mr-16">
+      <div className="grid grid-cols-1 my-8 px-5 gap-16
+        sm:grid-cols-2 sm:px-20">
+        <div>
           <p className="font-bold mb-4
             sm:text-xl">
             HOBBIES
@@ -49,6 +48,36 @@ export default function AboutPage()
             {
               info.education.map((level, index) => (
                 <li key={index}>{level}</li>
+              ))
+            }
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-bold mb-4
+            sm:text-xl">
+            SOFT SKILLS
+          </p>
+
+          <ul className="list-disc ml-5">
+            {
+              info.softSkills.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))
+            }
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-bold mb-4
+            sm:text-xl">
+            HARD SKILLS
+          </p>
+
+          <ul className="list-disc ml-5">
+            {
+              info.hardSkills.map((skill, index) => (
+                <li key={index}>{skill}</li>
               ))
             }
           </ul>
