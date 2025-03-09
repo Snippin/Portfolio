@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-const BestWorkShowcase = ({ showcaseNum = "00", interval = 3000, info }) =>
+const BestWorkShowcase = ({ showcaseNum = "00", interval = 3000, info, reverse = false }) =>
 {
   const [currentIndex, SetCurrentIndex] = useState(0);
 
@@ -23,8 +23,8 @@ const BestWorkShowcase = ({ showcaseNum = "00", interval = 3000, info }) =>
 
   return (
     <>
-      <div className="flex flex-col mb-16
-          sm:flex-row sm:items-center">
+      <div className={`flex flex-col mb-16
+          ${reverse ? "sm:flex-row-reverse" : "sm:flex-row"} sm:items-center`}>
         <div className="pl-4 w-1/12 justify-items-center mr-4
           sm:pl-16">
           <p className="mb-4 text-center font-bold italic text-3xl
@@ -44,6 +44,7 @@ const BestWorkShowcase = ({ showcaseNum = "00", interval = 3000, info }) =>
             alt={info.name + " image " + currentIndex}
             width={600}
             height={338}
+            unoptimized
             className="w-full h-full object-cover"
           />
         </div>
@@ -70,4 +71,3 @@ const BestWorkShowcase = ({ showcaseNum = "00", interval = 3000, info }) =>
 }
 
 export default BestWorkShowcase;
-3
