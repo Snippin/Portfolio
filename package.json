@@ -1,12 +1,15 @@
 {
-  "name": "website",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://snippin.github.io/Portfolio/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d out --dotfiles",
+    "redeploy": "npm run build && npm run deploy"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.8",
