@@ -7,7 +7,7 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 
 import Logo from "../../public/images/globe.svg"
-import MainPages from "../app/constants/main_pages";
+import NavbarButtons from "../app/constants/navbar_buttons";
 
 const Navbar = ({ currentPage = "Home" }) =>
 {
@@ -42,20 +42,15 @@ const Navbar = ({ currentPage = "Home" }) =>
 
 
         <div className="hidden sm:flex">
-          <ul className="hidden sm:flex">
-            <Link href="/about">
-              <p className={CheckCurrentPage(MainPages.ABOUT)}>About</p>
-            </Link>
-            <Link href="/contact">
-              <p className={CheckCurrentPage(MainPages.CONTACT)}>Contact</p>
-            </Link>
-            <Link href="/projects">
-              <p className={CheckCurrentPage(MainPages.PROJECTS)}>Projects</p>
-            </Link>
-            <Link href="/mini-projects">
-              <p className={CheckCurrentPage(MainPages.MINI_PROJECTS)}>Mini-Projects</p>
-            </Link>
-          </ul>
+          {
+            NavbarButtons.map((button, index) => (
+              <Link
+                key={index}
+                href={button.link}>
+                <p className={CheckCurrentPage(button.page)}>{button.page}</p>
+              </Link>
+            ))
+          }
         </div>
 
         <div onClick={HandleNav}
@@ -65,10 +60,7 @@ const Navbar = ({ currentPage = "Home" }) =>
       </div>
 
       <div className={`fixed w-[65%] h-screen top-0 bg-surfaceA10 p-10 ease-in duration-500
-        ${isMenuOpen ?
-          "left-0 sm:hidden" :
-          "left-[-100%]"}`
-      }>
+        ${isMenuOpen ? "left-0 sm:hidden" : "left-[-100%]"}`}>
         <div className="flex w-full items-center justify-end">
           <div onClick={HandleNav}
             className="cursor-pointer">
@@ -78,36 +70,18 @@ const Navbar = ({ currentPage = "Home" }) =>
 
         <div className="flex-col py-4">
           <ul>
-            <Link href="/">
-              <li onClick={() => SetMenuState(false)}
-                className="py-4 cursor-pointer">
-                Home
-              </li>
-            </Link>
-            <Link href="/about">
-              <li onClick={() => SetMenuState(false)}
-                className="py-4 cursor-pointer">
-                About
-              </li>
-            </Link>
-            <Link href="/contact">
-              <li onClick={() => SetMenuState(false)}
-                className="py-4 cursor-pointer">
-                Contact
-              </li>
-            </Link>
-            <Link href="/projects">
-              <li onClick={() => SetMenuState(false)}
-                className="py-4 cursor-pointer">
-                Projects
-              </li>
-            </Link>
-            <Link href="/mini-projects">
-              <li onClick={() => SetMenuState(false)}
-                className="py-4 cursor-pointer">
-                Mini-Projects
-              </li>
-            </Link>
+            {
+              NavbarButtons.map((button, index) => (
+                <Link
+                  key={index}
+                  href={button.link}>
+                  <li onClick={() => SetMenuState(false)}
+                    className="py-4 cursor-pointer">
+                    {button.page}
+                  </li>
+                </Link>
+              ))
+            }
           </ul>
         </div>
       </div>
