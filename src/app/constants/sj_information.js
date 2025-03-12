@@ -20,7 +20,7 @@ const SJInfo = {
     `${basePath}/images/projects/slayers_journey/SJ_RestSite.jpg`,
     `${basePath}/images/projects/slayers_journey/SJ_VFX.jpg`,
   ],
-  link: "/projects/Slayer's_Journey",
+  link: "/projects/slayers_journey",
 };
 
 export default SJInfo;

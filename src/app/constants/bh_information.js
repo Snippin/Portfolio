@@ -16,7 +16,7 @@ const BHInfo = {
     `${basePath}/images/projects/bullet.hell/BH_LevelUp.jpg`,
     `${basePath}/images/projects/bullet.hell/BH_AI.jpg`,
   ],
-  link: "/projects/Bullet.Hell",
+  link: "/projects/bullet.hell",
 };
 
 export default BHInfo;

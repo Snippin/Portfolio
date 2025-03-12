@@ -18,7 +18,7 @@ const LumenousInfo = {
     `${basePath}/images/projects/lumenous/Lumenous_AI3.2.gif`,
     `${basePath}/images/projects/lumenous/Lumenous_Fog.gif`,
   ],
-  link: "/projects/Lumenous",
+  link: "/projects/lumenous",
 };
 
 export default LumenousInfo;
