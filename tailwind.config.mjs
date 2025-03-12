@@ -16,7 +16,7 @@ export default {
         lightA0: "var(--light-a0)",
 
         primaryA0: "var(--primary-a0)",
-        primaryA10: "var(--primary-a10))",
+        primaryA10: "var(--primary-a10)",
         primaryA20: "var(--primary-a20)",
         primaryA30: "var(--primary-a30)",
         primaryA40: "var(--primary-a40)",
