@@ -8,6 +8,11 @@ const BHInfo = {
   genre: "Bullet Hell, Rogue-like, Deck Building",
   platform: "PC",
   duration: "2023",
+  slideshow: [
+    `${basePath}/images/projects/bullet.hell/BH_MainMenu.jpg`,
+    `${basePath}/images/projects/bullet.hell/BH_Gameplay.jpg`,
+    `${basePath}/images/projects/bullet.hell/BH_Gameplay2.jpg`,
+  ],
   images: [
     `${basePath}/images/projects/bullet.hell/BH_MainMenu.jpg`,
     `${basePath}/images/projects/bullet.hell/BH_Gameplay.jpg`,

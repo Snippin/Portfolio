@@ -14,7 +14,7 @@ const BestWorkShowcase = ({ showcaseNum = "00", interval = 3000, info, reverse =
     {
       setTimeout(() =>
       {
-        SetCurrentIndex((prevIndex) => (prevIndex + 1) % info.images.length);
+        SetCurrentIndex((prevIndex) => (prevIndex + 1) % info.slideshow.length);
       }, 500);
     }, interval);
 
@@ -40,7 +40,7 @@ const BestWorkShowcase = ({ showcaseNum = "00", interval = 3000, info, reverse =
 
         <div className="overflow-hidden rounded-3xl px-2 w-full max-w-[600px] h-[280px] sm:h-[338px]">
           <Image
-            src={info.images[currentIndex]}
+            src={info.slideshow[currentIndex]}
             alt={info.name + " image " + currentIndex}
             width={600}
             height={338}

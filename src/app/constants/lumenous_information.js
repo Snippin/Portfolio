@@ -8,6 +8,11 @@ const LumenousInfo = {
   genre: "First Person, Horror, Survival, Exploration, Puzzle",
   platform: "PC",
   duration: "2023",
+  slideshow: [
+    `${basePath}/images/projects/lumenous/Lumenous_MainMenu.jpg`,
+    `${basePath}/images/projects/lumenous/Lumenous_Gameplay1.jpg`,
+    `${basePath}/images/projects/lumenous/Lumenous_Gameplay2.jpg`,
+  ],
   images: [
     `${basePath}/images/projects/lumenous/Lumenous_MainMenu.jpg`,
     `${basePath}/images/projects/lumenous/Lumenous_Gameplay1.jpg`,
