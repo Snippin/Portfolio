@@ -7,7 +7,7 @@ const LumenousInfo = {
   fullDescription: "Lumenous is a labyrinth puzzle horror game with darkness being your enemy. Players are to solve the puzzles while avoiding the enemies and try to escape after collecting 4 items scattered in different areas that have different enemy/mechanics to overcome.\n\n3D Unity Project",
   genre: "First Person, Horror, Survival, Exploration, Puzzle",
   platform: "PC",
-  duration: "2023",
+  duration: "2023 (2 Weeks)",
   slideshow: [
     `${basePath}/images/projects/lumenous/Lumenous_MainMenu.jpg`,
     `${basePath}/images/projects/lumenous/Lumenous_Gameplay1.jpg`,

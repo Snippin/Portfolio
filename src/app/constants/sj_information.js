@@ -7,7 +7,7 @@ const SJInfo = {
   fullDescription: "Slayer's Journey is a game about building a deck that suits the player's playstyle while also experimenting with different cards, continuing to try different synergies, and discovering their preferred way of playing the game.\n\n2D Unity Project",
   genre: "Rogue-like, Deck Building, RPG",
   platform: "PC",
-  duration: "2024",
+  duration: "2024 (2 Weeks)",
   slideshow: [
     `${basePath}/images/projects/slayers_journey/SJ_MainMenu.jpg`,
     `${basePath}/images/projects/slayers_journey/SJ_Combat2.jpg`,

@@ -7,7 +7,7 @@ const BHInfo = {
   fullDescription: "Bullet.Hell is a rogue-like deck builder where players are to modify their decks which contains types of guns the player may use during the stage. Player has to kill all enemies in the stage to continue.\n\n2D Unity Project",
   genre: "Bullet Hell, Rogue-like, Deck Building",
   platform: "PC",
-  duration: "2023",
+  duration: "2023 (2 Weeks)",
   slideshow: [
     `${basePath}/images/projects/bullet.hell/BH_MainMenu.jpg`,
     `${basePath}/images/projects/bullet.hell/BH_Gameplay.jpg`,
