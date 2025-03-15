@@ -2,9 +2,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import BestShowcase from "../components/BestWorkShowcase"
 
-import SJInfo from "./constants/sj_information";
-import BHInfo from "./constants/bh_information";
-import LumenousInfo from "./constants/lumenous_information";
+import SJInfo from "./projects/slayers_journey/sj_information";
+import BHInfo from "./projects/bullet.hell/bh_information";
+import LumenousInfo from "./projects/lumenous/lumenous_information";
 
 export default function Home()
 {

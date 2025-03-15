@@ -1,6 +1,6 @@
-import BHInfo from "../constants/bh_information";
-import LumenousInfo from "../constants/lumenous_information";
-import SJInfo from "../constants/sj_information";
+import BHInfo from "./bullet.hell/bh_information";
+import LumenousInfo from "./lumenous/lumenous_information";
+import SJInfo from "./slayers_journey/sj_information";
 
 const ProjectsPreviewInfo = [
   {

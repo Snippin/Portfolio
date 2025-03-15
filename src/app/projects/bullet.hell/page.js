@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer"
 import ProjectIntroduction from "../../../components/ProjectIntroduction";
 import WorkImageGallery from "../../../components/WorkImageGallery";
 
-import BHInfo from "../../../app/constants/bh_information";
+import BHInfo from "./bh_information";
 
 export default function BulletHellPage()
 {
