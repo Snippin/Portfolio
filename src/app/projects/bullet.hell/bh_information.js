@@ -33,7 +33,7 @@ const BHInfo = {
   ],
   workList: [
     "Helped with other UI elements such as the Main Menu",
-    "Saving & Loading of data (Player data, and AI positions)",
+    "Saving & Loading of player data",
     "Github code integration (Setting up repository, resolving merge conflicts)",
   ],
   link: "/projects/bullet.hell",
