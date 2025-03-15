@@ -1,4 +1,4 @@
-const basePath = process.env.BASE_PATH;
+const basePath = `${process.env.BASE_PATH}/images/projects/bullet.hell`;
 
 const BHInfo = {
   name: "Bullet.Hell",
@@ -9,17 +9,32 @@ const BHInfo = {
   platform: "PC",
   duration: "2023 (2 Weeks)",
   slideshow: [
-    `${basePath}/images/projects/bullet.hell/BH_MainMenu.jpg`,
-    `${basePath}/images/projects/bullet.hell/BH_Gameplay.jpg`,
-    `${basePath}/images/projects/bullet.hell/BH_Gameplay2.jpg`,
+    `${basePath}/BH_MainMenu.jpg`,
+    `${basePath}/BH_Gameplay.jpg`,
+    `${basePath}/BH_Gameplay2.jpg`,
   ],
-  images: [
-    `${basePath}/images/projects/bullet.hell/BH_MainMenu.jpg`,
-    `${basePath}/images/projects/bullet.hell/BH_Gameplay.jpg`,
-    `${basePath}/images/projects/bullet.hell/BH_Gameplay2.jpg`,
-    `${basePath}/images/projects/bullet.hell/BH_Shop.jpg`,
-    `${basePath}/images/projects/bullet.hell/BH_LevelUp.jpg`,
-    `${basePath}/images/projects/bullet.hell/BH_AI.jpg`,
+  workGallery: [
+    {
+      image: `${basePath}/BH_AI.jpg`,
+      title: "AI",
+      description: "Finite-state machine for behaviours\nSprite animations\nAStar pathfinding",
+    },
+    {
+      image: `${basePath}/BH_LevelUp.jpg`,
+      title: "Leveling System",
+      description: "Allow player to level up\nSelect buffs to aid in the run\nStat calculation after selecting buff",
+
+    },
+    {
+      image: `${basePath}/BH_Shop.jpg`,
+      title: "Shop System",
+      description: "Shop UI\nBuying and Selling of cards\nModification of deck upon buying or selling",
+    },
+  ],
+  workList: [
+    "Helped with other UI elements such as the Main Menu",
+    "Saving & Loading of data (Player data, and AI positions)",
+    "Github code integration (Setting up repository, resolving merge conflicts)",
   ],
   link: "/projects/bullet.hell",
 };
