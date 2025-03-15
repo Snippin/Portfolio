@@ -40,7 +40,7 @@ const WorkImageGallery = ({ items }) =>
               height={400}
               className="w-full h-[300px] object-cover rounded-3xl" />
 
-            <div className="absolute bottom-0 left-0 w-full p-2 text-center bg-surfaceA10 rounded-b-3xl">
+            <div className="absolute bottom-0 left-0 w-full p-2 text-center bg-surfaceA10 rounded-b-3xl whitespace-pre-line">
               {item.title}
             </div>
           </div>
@@ -77,7 +77,7 @@ const WorkImageGallery = ({ items }) =>
 
               <div className="w-full p-4 flex flex-col justify-center
                 sm:w-1/3">
-                <h2 className="font-bold text-xl mb-2">{items[selectedIndex].title}</h2>
+                <h2 className="font-bold text-xl mb-2 whitespace-pre-line">{items[selectedIndex].title}</h2>
                 <ul className="list-disc text-start ml-4">
                   {
                     items[selectedIndex].description.split("\n").map((point, i) => <li key={i}>{point.trim()}</li>)
