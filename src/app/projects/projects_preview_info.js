@@ -7,19 +7,19 @@ const ProjectsPreviewInfo = [
     name: SJInfo.name,
     role: SJInfo.roles,
     link: SJInfo.link,
-    image: SJInfo.images[0],
+    image: SJInfo.slideshow[0],
   },
   {
     name: LumenousInfo.name,
     role: LumenousInfo.roles,
     link: LumenousInfo.link,
-    image: LumenousInfo.images[0],
+    image: LumenousInfo.slideshow[0],
   },
   {
     name: BHInfo.name,
     role: BHInfo.roles,
     link: BHInfo.link,
-    image: BHInfo.images[0],
+    image: BHInfo.slideshow[0],
   },
 ];
 
