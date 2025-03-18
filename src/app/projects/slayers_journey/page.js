@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer"
 import ProjectIntroduction from "../../../components/ProjectIntroduction";
 import WorkImageGallery from "../../../components/WorkImageGallery";
 
-import SJInfo from "./sj_information";
+import SJInfo from "./sj_info";
 
 export default function SlayersJourneyPage()
 {

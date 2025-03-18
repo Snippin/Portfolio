@@ -5,7 +5,7 @@ import Footer from "../../../components/Footer"
 import ProjectIntroduction from "../../../components/ProjectIntroduction";
 import WorkImageGallery from "../../../components/WorkImageGallery";
 
-import LumenousInfo from "./lumenous_information";
+import LumenousInfo from "./lumenous_info";
 
 export default function LumenousPage()
 {
