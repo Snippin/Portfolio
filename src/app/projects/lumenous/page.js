@@ -7,11 +7,11 @@ import WorkImageGallery from "../../../components/WorkImageGallery";
 
 import LumenousInfo from "./lumenous_information";
 
-export default function BulletHellPage()
+export default function LumenousPage()
 {
   return (
     <>
-      <Navbar currentPage="Bullet.Hell" />
+      <Navbar currentPage="Lumenous" />
 
       <div className="pt-28" />
 
