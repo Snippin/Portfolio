@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const ProjectPreview = ({ info }) =>
+const ProjectPreview = ({ isMiniProject = false, info }) =>
 {
   return (
     <Link href={info.link} className="flex flex-col group relative">
@@ -24,7 +24,7 @@ const ProjectPreview = ({ info }) =>
         {info.name}
       </p>
 
-      <p>{info.role}</p>
+      <p>{isMiniProject ? info.shortDescription : info.role}</p>
     </Link>
   );
 }
