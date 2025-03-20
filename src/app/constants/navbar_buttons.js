@@ -13,7 +13,7 @@ const NavbarButtons = [
   },
   {
     page: "Mini-Projects",
-    link: "/mini-projects"
+    link: "/mini_projects"
   },
 ];
 
