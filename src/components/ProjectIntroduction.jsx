@@ -1,10 +1,10 @@
-const ProjectIntroduction = ({ roles, description, duration, genre, platform }) =>
+const ProjectIntroduction = ({ roles, description, duration, genre, platform, isMiniProject = false }) =>
 {
   return (
     <div className="flex flex-col px-4 gap-0 my-2
         sm:flex-row sm:px-16 sm:gap-8">
       <div className="sm:w-1/2">
-        <div className="my-5">
+        <div className={`my-5 ${isMiniProject ? "hidden" : ""}`}>
           <p className="font-bold text-lg">ROLE</p>
           <p>{roles}</p>
         </div>
@@ -33,7 +33,7 @@ const ProjectIntroduction = ({ roles, description, duration, genre, platform }) 
           <p>{platform}</p>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
