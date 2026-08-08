@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,60342,o=>{o.q("/Portfolio/_next/static/media/globe.04f4epac_f3f4.svg")}]);
