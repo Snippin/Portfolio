@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import ScrollToTop from "../../../components/ScrollToTop";
 import ProjectIntroduction from "../../../components/ProjectIntroduction";
 import WorkImageGallery from "../../../components/WorkImageGallery";
 
@@ -74,6 +75,7 @@ export default function Echo2DPage() {
       </ul>
 
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

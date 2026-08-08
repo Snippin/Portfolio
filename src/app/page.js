@@ -1,26 +1,22 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import BestShowcase from "../components/BestWorkShowcase"
+import ScrollToTop from "../components/ScrollToTop";
+import BestShowcase from "../components/BestWorkShowcase";
 
 import SJInfo from "./projects/slayers_journey/sj_info";
 import BHInfo from "./projects/bullet.hell/bh_info";
 import LumenousInfo from "./projects/lumenous/lumenous_info";
 
-export default function Home()
-{
+export default function Home() {
   return (
     <>
       <Navbar currentPage="Home" />
 
       {/* Small introduction */}
       <div className="pt-28 px-3 md:px-16">
-        <h1>
-          Programmer / Game Developer
-        </h1>
+        <h1>Programmer / Game Developer</h1>
 
-        <p className="text-5xl font-bold italic my-4 md:text-9xl">
-          Sean Tong
-        </p>
+        <p className="text-5xl font-bold italic my-4 md:text-9xl">Sean Tong</p>
 
         <p>
           Aspiring programmer, that loves learning about programming,{" "}
@@ -38,21 +34,15 @@ export default function Home()
 
         <h1 className="border-t mb-8" />
 
-        <BestShowcase
-          showcaseNum="1"
-          info={SJInfo} />
+        <BestShowcase showcaseNum="1" info={SJInfo} />
 
-        <BestShowcase
-          showcaseNum="2"
-          info={LumenousInfo}
-          reverse />
+        <BestShowcase showcaseNum="2" info={LumenousInfo} reverse />
 
-        <BestShowcase
-          showcaseNum="3"
-          info={BHInfo} />
+        <BestShowcase showcaseNum="3" info={BHInfo} />
       </div>
 
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
